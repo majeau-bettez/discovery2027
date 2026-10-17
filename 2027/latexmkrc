@@ -1,0 +1,12 @@
+# Build with: latexmk   (from this folder)
+# Engine: XeLaTeX (required by fontspec in shared/nserc.cls)
+$pdf_mode = 5;
+# The markdown package (loaded by nserc.cls) needs shell escape to run its Lua converter
+$xelatex = 'xelatex -shell-escape -file-line-error %O %S';
+@default_files = ('proposal.tex', 'budget.tex');
+
+# Find shared/nserc.cls and the Times New Roman files without copying them here.
+# The trailing ':' (or ';' on Windows) keeps the default TeX search paths.
+my $sep = ($^O eq 'MSWin32') ? ';' : ':';
+$ENV{'TEXINPUTS'} = '../shared//' . $sep . ($ENV{'TEXINPUTS'} // '');
+$ENV{'TTFONTS'}   = '../shared/fonts//' . $sep . ($ENV{'TTFONTS'} // '');

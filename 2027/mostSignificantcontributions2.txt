@@ -1,0 +1,43 @@
+My work focuses on bridging the methodological and computational foundations of industrial ecology models to guide efforts toward more environmentally sustainable and circular production and consumption systems.
+
+METHODOLOGICAL AND OPERATIONAL DEVELOPMENT OF HYBRID LIFE-CYCLE ASSESSMENT (LCA)
+
+My contribution to a more rigorous and pragmatic approach to so-called "Hybrid LCAs" is likely to have one of the most enduring impacts among my contributions to the field. The need for hybridization arises because LCA inventories and their system descriptions may be detailed, but they are necessarily incomplete (truncation issues), whereas environmentally extended economic input-output (EEIO) models represent the entire economy (no truncation) but are heavily aggregated. Hybrid LCAs combine both approaches, complementing the detail of LCA with the completeness of EEIO. How this hybridization is performed matters, however. Until recently, such hybridizations were largely performed in an ad hoc, exploratory manner by different research groups, with little reproducibility, high risks of inconsistency, and applications limited to the most important processes in the LCA inventory, never the entire system description.
+
+I began by mathematically demonstrating which LCA modelling assumptions (allocations, system expansion, substitution) are compatible with specific EEIO modelling assumptions (so-called "constructs": industry-technology construct, commodity-technology construct, etc.) [1]. This allowed greater consistency in Hybrid-LCA modelling and led me to clarify how these different co-production modelling assumptions (combined or not) were methodologically compatible with attributional-LCA questions, and which were compatible with consequential-LCA questions [2]. This work brought clarity to a long-standing debate and was recognized with the Graedel Prize of the International Society for Industrial Ecology in 2018.
+
+These methodological insights were then operationalized through the development of a transparent algorithm for large-scale hybridization, enabling the combination of entire LCA databases (e.g., ecoinvent) with multi-regional EEIO tables (e.g., Exiobase) [3,4]. We further formalized these techniques, demonstrating the mathematical equivalence between the "tiered-hybrid" and "path-exchange" methods, thereby resolving a long-standing methodological dispute [5].
+
+My unique expertise in model hybridization distinguishes my research profile within our community, and I have been invited to participate in Horizon Europe projects specifically for this competence.
+
+Collectively, this work provides the foundation for more efficient, consistent, and reproducible data-integration practices in industrial ecology. It has already influenced how database developers in both the LCA and EEIO communities approach data consolidation and cross-model collaboration.
+
+[1] 10.1111/jiec.12142
+[2] 10.1111/jiec.12604
+[3] 10.1111/jiec.12979
+[4] 10.1111/jiec.13132
+[5] Weinold & Majeau-Bettez (2025), Journal of Industrial Ecology, In press
+
+INTEGRATION OF PROSPECTIVE-LCA, DYNAMIC MATERIAL FLOW ANALYSIS (MFA) AND SYSTEM OPTIMIZATION FOR A DECARBONIZED AND CIRCULAR FUTURE FOR ALUMINIUM
+
+The careful integration of complementary modelling approaches is essential for guiding long-term industrial transformation. We have broken new ground in modelling integration and interdisciplinary software development in our prospective study of potential transition pathways toward a more decarbonized and circular future for the aluminium industry. We developed open-source tools for the exploration of different decarbonization pathways for the primary production of aluminium and their prospective life-cycle environmental impacts (p-LCA) [6]. Then, concerned with issues of inter-alloy contamination during the recycling of aluminium (loss of quality, downcycling), we performed a highly detailed and parameterized dynamic material flow analysis of the different aluminium alloys under several representative scenarios over the next decades [7]. These detailed prospective LCAs and MFAs were then combined in a single optimization program to determine the level of sorting required at the end-of-life of aluminium products to ensure a viable recycling system over time and to minimize environmental impacts [8].
+
+These articles are leading the way toward a consistent methodological integration of industrial ecology tools, taking into account the interaction between the material and energy systems, to guide strategic decisions for a transition to a more environmentally sustainable and circular economy. Their combination serves as an inspiration for the current proposal. It has also garnered the attention of major industrial associations, notably the Aluminium Stewardship Initiative, which organized an entire workshop around our findings.
+
+[6] 10.1016/j.gloenvcha.2021.102316
+[7] 10.1111/jiec.13321
+[8] 10.1111/jiec.13388
+
+METAL-ENERGY NEXUS IN PROSPECTIVE DECARBONIZATION TRANSITION PATHWAYS
+
+The large integrated assessment models (IAMs) that underpin the decarbonization roadmaps of the Intergovernmental Panel on Climate Change (IPCC) notoriously assume unlimited metal availability for the energy transition. This has led to a growing concern among the MFA community that these transition pathways may be infeasibly over-optimistic, both because of depleting reserves for some critical metals in the long run and limited extraction capacity in the short run. We found that these studies tended to assume fixed metal intensities for broad groups of technologies (e.g., all wind turbines), while society now has the flexibility to produce a wide diversity of sub-technologies with differing metal requirements (e.g., wind turbines with and without permanent magnets).
+
+We therefore set out to (1) compile a database of metal intensities for energy sub-technologies over time, (2) estimate short- and long-term constraints on these metals, and (3) develop a reconciliation algorithm that adapts IAM scenarios by selecting alternative sub-technologies to meet metal-availability constraints while deviating minimally from original pathways.
+
+The resulting study, accepted in Nature Sustainability [9], reveals a more nuanced picture of society's technological options for reaching carbon neutrality and offers actionable insights for policy makers and technology developers. Beyond its substantive findings, the project raises the standard for integrating prospective LCA, dynamic MFA, and optimization-based technology selection. Its open-source framework and open-data approach will allow our community (and this very project) to build upon it for greater strategic relevance in guiding the massive investments required to mitigate climate change.
+
+[9] Bieuville et al. (2025), Nature Sustainability
+
+OVERVIEW
+
+Together, these three contributions illustrate a consistent trajectory toward rigorous methodological integration and open, data-rich modelling across industrial ecology. They bridge distinct analytical traditions (LCA, EEIO, MFA, IAM, and operations research) through large-scale data integration and transparent computational tools. The resulting frameworks promote consistency and robustness in assessing production and consumption systems, enabling the industrial ecology community to provide more credible and actionable guidance for sustainability transitions.
