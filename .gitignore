@@ -1,0 +1,47 @@
+# ---- LaTeX build products -------------------------------------------------
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.xdv
+*.tdo
+build/
+
+# markdown package (shell-escape helper files)
+_markdown_*/
+*.markdown.in
+*.markdown.lua
+*.markdown.out
+
+# ---- PDFs: compiled outputs are regenerated, except... ---------------------
+*.pdf
+# ...figure exports included by the .tex files
+!*.drawio.pdf
+!**/figures/*.pdf
+# ...and the PDFs as actually submitted, kept for reference
+!**/submitted/*.pdf
+
+# ---- Not for a public repo ----------------------------------------------
+# Put NSERC reviews, decision notices, NOI printouts, etc. here.
+private/
+
+# ---- draw.io ----------------------------------------------------------------
+*.bkp
+*.dtmp
+.$*
+
+# ---- Editors / OS -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.vscode/
+.idea/
