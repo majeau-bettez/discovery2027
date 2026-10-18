@@ -25,7 +25,8 @@ Each year folder contains:
 | `pastHQP.txt` | Past HQP contributions |
 | `mostSignificantcontributions*.txt` | Most significant contributions (two versions) |
 | `OtherResearchSupport.txt` | Other sources of research support |
-| `references.bib` | Cited entries only. **Not yet in the repo; see below.** |
+| `references.bib` | Bibliography: the cited entries only, self-contained |
+| `Discovery_Guillaume.bib` | (2026 only) The hand-curated bib file used alongside the Zotero library, kept for history |
 
 To see everything that changed this round: `git diff cff12ab -- 2027/` or `diff -r 2026 2027`.
 
@@ -46,20 +47,22 @@ The folder's `latexmkrc` handles the details:
 
 If you compile from an editor without latexmk, set the same options yourself: shell escape, plus `TEXINPUTS=../shared//:` and `TTFONTS=../shared/fonts//:`.
 
-## Bibliography: generating `references.bib`
+## Bibliography
 
-The 2026 sources read the full Zotero library from `/mnt/collection/...` plus `Discovery_Guillaume.bib`. For the repo to stay self-contained, each year folder should instead carry a `references.bib` with only the cited entries. To generate it once, on a machine that has the Zotero export:
+Each year folder carries a self-contained `references.bib`. The original 2026 sources read the full Zotero library from `/mnt/collection/...` plus `Discovery_Guillaume.bib`. `2026/references.bib` is the biber export of exactly the 28 entries cited in that version. Rebuilt with it, the 2026 proposal is pixel-identical to `2026/submitted/proposal.pdf`.
+
+`2027/references.bib` starts as a copy of the 2026 one. When you cite new entries from Zotero, regenerate the minimal file on a machine that has the Zotero export:
 
 ```sh
-cd 2026
-cat /mnt/collection/zoterolibrary/zoteroFullLibrary_biblatex.bib /path/to/Discovery_Guillaume.bib > references.bib
+cd 2027
+cat /mnt/collection/zoterolibrary/zoteroFullLibrary_biblatex.bib references.bib > /tmp/all.bib
+# temporarily point \addbibresource to /tmp/all.bib, then:
 latexmk proposal.tex
-biber --output-format=bibtex --output-resolve --output-file=references.min.bib proposal
-mv references.min.bib references.bib
-cp references.bib ../2027/
+biber --output-format=bibtex --output-resolve --output-file=references.bib proposal
+# restore \addbibresource{references.bib}
 ```
 
-Until then, both proposals compile with citations shown as keys and an empty reference list. That is why the build is 6 pages instead of the submitted 7.
+Alternatively, paste the new entries into `references.bib` by hand. Unused entries do no harm; they just don't print.
 
 ## Figure
 
