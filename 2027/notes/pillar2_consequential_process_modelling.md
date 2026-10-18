@@ -50,22 +50,22 @@ An infrastructure of interoperable **process model classes** (e.g., an "aluminiu
 
 One representation (O2.1, core), tested under three kinds of reference by two further objectives: O2.2 moves from known processes to undeployed ones, and O2.3 benchmarks a deployed sector against the existing database. Synthesis is handled at program level, across both pillars (see "Integration across pillars").
 
-**Pillar II Discovery HQP: 3 of the program's 6** (2 PhD, 1 MSc). Calendar in `integration_across_pillars.md`.
+**Pillar II Discovery HQP: 3 of the program's 6** (PhD II, PhD III, MSc II; numbering key in the integration note). Calendar in `integration_across_pillars.md`.
 
 | Objective | Setting | Reference | HQP |
 |---|---|---|---|
-| **O2.1** Representation of process model classes | Interface design; database diagnostic | Retrospective evaluation of v0 | PhD, years 1–4 |
-| **O2.2** AI-assisted construction and anticipation | Known processes, then undeployed ones | Expert-built models ("ground truth"), then none | PhD, years 2–5 |
-| **O2.3** Background sector class: steel | Deployed industrial processes | Existing database (ecoinvent) and reported statistics | MSc, years 2–3 (paired with O1.3) |
+| **O2.1** Representation of process model classes | Interface design; database diagnostic | Retrospective evaluation of v0 | PhD II, years 1–4 |
+| **O2.2** AI-assisted construction and anticipation | Known processes, then undeployed ones | Expert-built models ("ground truth"), then none | PhD III, years 2–5 |
+| **O2.3** Background sector class: steel | Deployed industrial processes | Existing database (ecoinvent) and reported statistics | MSc II, years 2–3 (paired with MSc I, O1.3) |
 
 **Niches:**
-- **O2.1 PhD:** the representation (interface) and the database diagnostic.
-- **O2.2 PhD:** AI-assisted construction, validated where the answer is known, then applied where it is not.
-- **O2.3 MSc:** one sector class, calibrated and benchmarked.
+- **PhD II (O2.1):** the representation (interface) and the database diagnostic.
+- **PhD III (O2.2):** AI-assisted construction, validated where the answer is known, then applied where it is not.
+- **MSc II (O2.3):** one sector class, calibrated and benchmarked.
 
 **Group expertise, not case studies:** the plastics work (ongoing PhD: MFA of Canadian plastics, OPLA ecodesign tool, early AI-assisted scale-up and modular modelling) is prior expertise and preliminary results the program builds on. Plastics are not among the program's case studies, and that PhD is neither funded by nor counted in this grant. Its AI-assisted scale-up work serves as proof of concept for O2.2's second phase; the two are sequential, not overlapping.
 
-### O2.1 — Representation of process model classes for cLCA *(core; PhD, years 1–4)*
+### O2.1 — Representation of process model classes for cLCA *(core; PhD II, years 1–4)*
 
 Methodological questions not funded by CFI:
 
@@ -80,12 +80,12 @@ Steps:
 1. **Year 1:** retrospective evaluation of v0 against these requirements (which provisional choices hold up, which break).
 2. Design principles → revised **v1**, tested through O2.2–O2.3.
 
-Motivation and scoping (**year 1 of the O2.1 PhD**, not a separate MSc: it gives the PhD an independent early output while the interface is being designed; undergraduate trainees can support the screening):
+Motivation and scoping (**year 1 of PhD II**, not a separate MSc: it gives the PhD an independent early output while the interface is being designed; undergraduate trainees can support the screening):
 - **Database diagnostic:** automated screening of ecoinvent (reference yields = 1, balances that don't close where composition is known, geographic clones, vintages represented).
   - The clone problem persists in regionalized variants (e.g., regioinvent): these regionalize the *market mixes* a process draws on according to its country, not the *technology* of the process itself.
 - **Prioritization:** GSA on representative cLCA systems (contribution × variant sensitivity) → a list of priority processes, which bounds the scope.
 
-### O2.2 — AI-assisted construction and anticipation: from known to undeployed processes *(core element; PhD, years 2–5)*
+### O2.2 — AI-assisted construction and anticipation: from known to undeployed processes *(core element; PhD III, years 2–5)*
 
 One thesis arc: validate the AI-assisted workflow where the answer is known, then apply it where it is not. The credibility of the anticipatory part rests on the error profile established in the first part.
 
@@ -99,7 +99,7 @@ One thesis arc: validate the AI-assisted workflow where the answer is known, the
 3. **Years 4–5 — Anticipatory case: plasma nitrogen fixation vs Haber-Bosch.**
    - Builds on PLASMA project results. PLASMA ends in 2027, so this phase works from published or archived results, without live collaboration; state this plainly in the plan.
    - It is unclear how realistic a Haber-Bosch replacement is, and under which scenarios — exactly the type of question we target. Strong techno-economic dimension (complementary expertise within PLASMA).
-   - **Co-timed with the O1.2 nitrogen MSc (years 4–5):** joint paper on the variance decomposition. *Hypothesis:* uncertainty about the deployed configuration (Pillar II) exceeds uncertainty about the background marginal supplier (Pillar I). This PhD owns the foreground side of that decomposition.
+   - **Co-timed with MSc III (O1.2, nitrogen; years 4–5):** joint paper on the variance decomposition. *Hypothesis:* uncertainty about the deployed configuration (Pillar II) exceeds uncertainty about the background marginal supplier (Pillar I). This PhD owns the foreground side of that decomposition.
 
 - *Success criteria, on two fronts* (shared protocol with Pillar I):
   1. **Process level:** agreement on major flows within a stated tolerance; errors characterized by category (trace/fugitive emissions, correlations out of range, basis mismatches such as LHV/HHV or wet/dry).
@@ -108,9 +108,9 @@ One thesis arc: validate the AI-assisted workflow where the answer is known, the
 - Stance: AI as tool, not magic; it does not generate data. Tests verify the code against the spec, not the spec against reality; expert judgment remains necessary.
 - Calibration against reported data moved to O2.3, where reported statistics belong; this keeps the PhD to one arc.
 
-### O2.3 — Background sector class: steel, benchmarked against ecoinvent *(MSc, years 2–3)*
+### O2.3 — Background sector class: steel, benchmarked against ecoinvent *(MSc II, years 2–3)*
 
-- **Sector: steel** (decided jointly with Pillar I): BF-BOF → DRI-EAF (natural gas, then H₂), highly decision-relevant for the transition; ArcelorMittal as CIRAIG partner. Paired with the O1.3 MSc (steel hindcast); both start in year 2 and feed the mid-term synthesis. Another metallurgy sector can replace steel if needed.
+- **Sector: steel** (decided jointly with Pillar I): BF-BOF → DRI-EAF (natural gas, then H₂), highly decision-relevant for the transition; ArcelorMittal as CIRAIG partner. Paired with MSc I (O1.3, steel hindcast); both start in year 2 and feed the mid-term synthesis. Another metallurgy sector can replace steel if needed.
   - Cement not put forward (the CANMET project is only just starting). Ammonia not chosen as background class; the nitrogen link goes through O2.2 (plasma) and O1.2.
 - **Scope for an MSc:** variants by vintage within one or two routes, not the whole steel sector.
 - **Calibration against reported data** (plant-level and sector statistics, NPRI, GHGRP) to estimate the inefficiencies that first-principles design models leave out (systematic optimism: part-load, start-ups, losses, maintenance).
@@ -124,7 +124,7 @@ One thesis arc: validate the AI-assisted workflow where the answer is known, the
 Integration is a cross-cutting element with no dedicated HQP and no end-of-program work package. A synthesis that waits for every PhD to finish is fragile, so integration is built into the design.
 
 1. **Shared protocol from year 1.** Both pillars use the same perturbation definition, the same two success criteria (process- or market-level agreement within a stated tolerance, and preservation of LCA/decision rankings) and the same reporting template. Each finished case adds a row to a cumulative comparison table, so results are comparable by construction.
-2. **Shared cases carry the integration.** Steel (ArcelorMittal) is studied by one MSc from each pillar (O1.3 hindcast, O2.3 class benchmark). Heavy-industry heat in EnergyScope Québec joins O1.1 with the CANMET project. Nitrogen (O1.2) builds on results of the PLASMA project (plasma fixation vs Haber-Bosch), which runs until 2027 and funds no HQP in this program. The joint variance decomposition (deployed foreground configuration vs background marginal supplier) comes out as co-authored papers on these cases.
+2. **Shared cases carry the integration.** Steel (ArcelorMittal) is studied by one MSc from each pillar (MSc I on O1.3, hindcast; MSc II on O2.3, class benchmark). Heavy-industry heat in EnergyScope Québec joins O1.1 with the CANMET project. Nitrogen (O1.2) builds on results of the PLASMA project (plasma fixation vs Haber-Bosch), which runs until 2027 and funds no HQP in this program. The joint variance decomposition (deployed foreground configuration vs background marginal supplier) comes out as co-authored papers on these cases.
 
 HQP allocation and calendar for both pillars: see `integration_across_pillars.md` (6 Discovery HQP: 3 PhD, 3 MSc; 3 in Pillar II).
 3. **Two PI-led synthesis moments.** Mid-term (year 3), from the first completed MSc cases; year 5, with the PhD students as co-authors.
@@ -164,16 +164,16 @@ Each pillar has its own contribution; they are stronger together:
 
 ## Open items
 
-- [x] Former O2.3 (emerging technologies) folded into the O2.2 PhD; Pillar II now has three objectives (O2.1 representation, O2.2 construction and anticipation, O2.3 steel class). Plastics: group expertise only, not a case study.
+- [x] Former O2.3 (emerging technologies) folded into PhD III (O2.2); Pillar II now has three objectives (O2.1 representation, O2.2 construction and anticipation, O2.3 steel class). Plastics: group expertise only, not a case study.
 - [x] O2.3 (formerly O2.4): steel (paired with O1.3), decided jointly with Pillar I.
 - [x] Synthesis: moved to program level (integration across pillars).
 - [ ] Align O2.2 success criteria wording with the shared protocol (same two criteria in both pillars).
 - [x] Plasma scope confirmed (Haber-Bosch replacement angle); now the anticipatory case of O2.2, years 4–5.
-- [x] Diagnostic: folded into year 1 of the O2.1 PhD (supersedes the earlier "separate MSc" decision).
-- [x] HQP: 3 Discovery HQP in Pillar II (O2.1 PhD, O2.2 PhD, O2.3 MSc); every objective has a funded student. Program total 6 (see integration note).
+- [x] Diagnostic: folded into year 1 of PhD II (O2.1) (supersedes the earlier "separate MSc" decision).
+- [x] HQP: 3 Discovery HQP in Pillar II (PhD II, PhD III, MSc II); every objective has a funded student. Program total 6 (see integration note).
 - [ ] Quantitative success criteria for O2.2 and O2.3: process-level tolerances **and** ranking-preservation metric.
 - [ ] Check the precedents marked "to verify."
-- [x] Spin-off paper confirmed: quantified diagnostic of ecoinvent idealization (yields, balances, clones) = first paper of the O2.1 PhD (year 1). *(The details below are internal planning; in the application, one line at most.)*
+- [x] Spin-off paper confirmed: quantified diagnostic of ecoinvent idealization (yields, balances, clones) = first paper of PhD II (year 1). *(The details below are internal planning; in the application, one line at most.)*
   - Keep it achievable: restrict balance checks to sectors where composition is known (chemicals, metals); yields and clones can be screened across the whole database.
   - Main output = an open, rerunnable screening script that can be applied to each new ecoinvent version (the script has more lasting value than the snapshot).
   - Second, optional step: link to the GSA (do the detected idealizations actually matter in typical cLCA results?). This could be the second paper, or the thesis chapter.

@@ -92,9 +92,9 @@ See [integration_across_pillars.md](integration_across_pillars.md). In short: no
 
 ## Sub-objectives and HQP
 
-Six HQP are funded by Discovery across both pillars: 3 PhD (4 years each) and 3 MSc (2 years each). The MSc projects apply and test what the PhDs develop, so they start only once a first version of the protocol and the class interface exists.
+Six HQP are funded by Discovery across both pillars: 3 PhD (4 years each) and 3 MSc (2 years each). The MSc projects apply and test what the PhDs develop, so they start only once a first version of the protocol and the class interface exists. HQP are numbered by order of start (PhD I–III, MSc I–III; key in the integration note); objectives keep their O-codes.
 
-### O1.1 Representation of market consequences, tested in a perturbable model *(PhD, years 1–4)*
+### O1.1 Representation of market consequences, tested in a perturbable model *(PhD I, years 1–4)*
 
 - The shared perturbation protocol, used by both pillars: size, start, end, time profile, information lead.
 - The three links ν, φ(t) and m(t), and the accounting layer that turns a model's response into marginal mixes in the LCI.
@@ -102,17 +102,17 @@ Six HQP are funded by Discovery across both pillars: 3 PhD (4 years each) and 3 
 - Tier A experiments in EnergyScope Québec. Dynamic vs. snapshot versions test foresight. Peak-coincident vs. flat perturbations (heat pumps vs. industrial load) test the load-profile effect. The trend and timing-shift heuristics are benchmarked, including after the perturbation ends. Heavy-industry heat is handled with the CANMET project.
 - GCAM perturbations in the later years, if time allows.
 
-### O1.2 From regional scenarios to local markets *(MSc, years 4–5)*
+### O1.2 From regional scenarios to local markets *(MSc III, years 4–5)*
 
 - Disaggregate IAM regional trends to countries, and reconcile them with plant-level fleets, trade links and national plans (Tier B).
 - Case: nitrogen fertilizer and ammonia, Canada and the US. It builds on results of the PLASMA project (plasma fixation vs. Haber-Bosch). PLASMA runs until 2027 and funds no HQP in this program.
 - Inherits the O1.1 protocol and feeds the final synthesis.
 
-### O1.3 Marginal suppliers from market evidence: a steel hindcast *(MSc, years 2–3)*
+### O1.3 Marginal suppliers from market evidence: a steel hindcast *(MSc I, years 2–3)*
 
 - Apply heuristic marginals to the data available at the time (2000–2020), and compare with the capacity actually built (Tier C).
 - Audited extraction pipelines (GEM iron and steel tracker, company and project filings).
-- Paired with the O2.3 MSc on steel in Pillar II. Another metallurgy sector can replace steel if circumstances require. Feeds the mid-term synthesis.
+- Paired with MSc II (O2.3) on steel in Pillar II. Another metallurgy sector can replace steel if circumstances require. Feeds the mid-term synthesis.
 
 The calendar for both pillars is in [integration_across_pillars.md](integration_across_pillars.md).
 
