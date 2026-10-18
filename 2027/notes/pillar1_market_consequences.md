@@ -62,10 +62,12 @@ Each sector is handled at the most structural tier its models allow. Mirroring P
 | Sector | Main tier | Models we can perturb | Reference scenarios | Data on market state and pipelines | Hard part | Link to Pillar II |
 | --- | --- | --- | --- | --- | --- | --- |
 | Energy | A | EnergyScope Québec (dynamic and snapshot, peak hours; heavy-industry heat via the CANMET project); GCAM; PyPSA; MESSAGEix-GLOBIOM public baseline (optional) | NGFS, AR6, SSP database; Canada Energy Regulator; Hydro-Québec supply plans | Global Energy Monitor power tracker; EIA-860; NREL Cambium long-run marginal rates | Load profile and peak; binding caps | Process operation changes load profiles; heavy-industry heat |
-| Nitrogen fertilizer and agriculture | A–B | GCAM land module; MAgPIE | SSP land-use outputs; OECD-FAO Agricultural Outlook; AgMIP | FAOSTAT incl. trade matrix; BACI; 2.-0 LCA iLUC model; ammonia plant data (source to identify) | Split between intensification, land expansion and reduced consumption; supply response of ammonia | Plasma fertilization vs. Haber-Bosch (O2.2, years 4–5) |
-| Metals, steel first | B–C | MESSAGEix-Materials (whether it runs on public data is unverified) | IEA Critical Minerals Outlook; stock-flow models (ODYM) | USGS; GEM iron and steel tracker; NI 43-101 reports (SEDAR+); NRCan Major Projects Inventory | Constrained supply: scrap, by-products, overcapacity | Metallurgy class resolved by vintage (O2.3); ArcelorMittal |
+| Nitrogen fertilizer and agriculture | A–B | GCAM N-fertilizer and land modules (O1.1, years 3–4); MAgPIE | SSP land-use outputs; OECD-FAO Agricultural Outlook; AgMIP | FAOSTAT incl. trade matrix; BACI; 2.-0 LCA iLUC model; ammonia plant data (source to identify) | Split between intensification, land expansion and reduced consumption; supply response of ammonia | Plasma fertilization vs. Haber-Bosch (O2.2, years 4–5) |
+| Metallurgy (steel; aluminium as fallback) | A–C | Stock-driven dynamic MFA under SSPs (O1.3); GCAM iron and steel; MESSAGEix-Materials (whether it runs on public data is unverified) | IEA Critical Minerals Outlook; stock-flow models (ODYM) | USGS; GEM iron and steel tracker; NI 43-101 reports (SEDAR+); NRCan Major Projects Inventory | Constrained supply: scrap, by-products, overcapacity | Metallurgy class resolved by vintage (O2.3); ArcelorMittal |
 
 The nitrogen market bridges the energy and agriculture rows. Haber-Bosch ammonia depends on natural gas or electrolytic hydrogen, and plasma fixation on electricity, so its marginal response couples both systems.
+
+**Base scenarios.** Every decision is evaluated as a perturbation around several base scenarios: SSP/RCP energy pathways plus material trajectories consistent with them (stock-driven dynamic MFA under the same SSP drivers, O1.3). Conclusions are checked for robustness across these base scenarios. For metals, the MFA is itself a model we can perturb on physical grounds: it shows when scrap is constrained, so when extra demand falls on primary routes. It does not capture price responses (ν), which come from reconciliation with IAM routes (Tier B).
 
 Shared LCA plumbing: IAMC nomenclature and pyam, premise, ecoinvent, Brightway. What is missing, and what we build, is a layer from scenarios to marginal mixes. It outputs marginal mixes per market and per tier, with metadata on regime, φ and error bounds.
 
@@ -83,12 +85,12 @@ Shared LCA plumbing: IAMC nomenclature and pyam, premise, ecoinvent, Brightway. 
 - **Geographic clones.** Pillar II's diagnostic quantifies where candidate suppliers map to the same proxy, that is, where identifying the marginal supplier changes nothing.
 - **Joint hypothesis.** Uncertainty about the deployed foreground configuration exceeds uncertainty about the background marginal supplier. It is tested by variance decomposition on the nitrogen case (O2.2 anticipatory phase with O1.2, both in years 4–5).
 - **Operation changes are also market perturbations.** A change in how a process runs (Pillar II) can change its load profile or coproduct output, and Pillar I translates that into market consequences.
-- **Shared cases.** Plasma fertilization vs. Haber-Bosch (nitrogen market, building on the PLASMA project, which runs until 2027); heavy industry and heat in EnergyScope Québec (CANMET); steel (ArcelorMittal).
+- **Shared cases.** Plasma fertilization vs. Haber-Bosch (nitrogen market, building on the PLASMA project, which runs until 2027); heavy industry and heat in EnergyScope Québec (CANMET); metallurgy (steel with ArcelorMittal; aluminium as fallback).
 - **Shared evaluation logic.** Both pillars test a core representation against different kinds of reference, with the same success criteria on two fronts.
 
 ## Integration across pillars
 
-See [integration_across_pillars.md](integration_across_pillars.md). In short: no dedicated HQP and no end-of-program work package; a shared protocol from year 1; shared cases (steel studied by one MSc from each pillar; heat with the CANMET project; nitrogen building on PLASMA results); two PI-led synthesis moments (year 3 and year 5); one program-level secondary question.
+See [integration_across_pillars.md](integration_across_pillars.md). In short: no dedicated HQP and no end-of-program work package; a shared protocol from year 1; shared cases (metallurgy studied by one MSc from each pillar; heat with the CANMET project; nitrogen building on PLASMA results); two PI-led synthesis moments (year 3 and year 5); one program-level secondary question.
 
 ## Sub-objectives and HQP
 
@@ -100,19 +102,20 @@ Six HQP are funded by Discovery across both pillars: 3 PhD (4 years each) and 3 
 - The three links ν, φ(t) and m(t), and the accounting layer that turns a model's response into marginal mixes in the LCI.
 - A formal statement of when the timing-shift is exact (drivers indexed on cumulative deployment vs on the calendar), and a decomposition of IAM capacity growth into the part driven by demand and the part driven by the calendar.
 - Tier A experiments in EnergyScope Québec. Dynamic vs. snapshot versions test foresight. Peak-coincident vs. flat perturbations (heat pumps vs. industrial load) test the load-profile effect. The trend and timing-shift heuristics are benchmarked, including after the perturbation ends. Heavy-industry heat is handled with the CANMET project.
-- GCAM perturbations in the later years, if time allows.
+- Years 3–4: a second Tier A model, GCAM (iron-and-steel and N-fertilizer sectors). It tests whether error profiles from a planned, hydro-dominated system transfer to a global market model, and gives a structural reference for O1.2 and O1.3.
 
 ### O1.2 From regional scenarios to local markets *(MSc III, years 4–5)*
 
 - Disaggregate IAM regional trends to countries, and reconcile them with plant-level fleets, trade links and national plans (Tier B).
 - Case: nitrogen fertilizer and ammonia, Canada and the US. It builds on results of the PLASMA project (plasma fixation vs. Haber-Bosch). PLASMA runs until 2027 and funds no HQP in this program.
+- Production routes can be checked against GCAM N-fertilizer perturbations from O1.1 (years 3–4).
 - Inherits the O1.1 protocol and feeds the final synthesis.
 
-### O1.3 Marginal suppliers from market evidence: a steel hindcast *(MSc I, years 2–3)*
+### O1.3 Metallurgy: hindcast and prospective reference trajectories *(MSc I, years 2–3)*
 
-- Apply heuristic marginals to the data available at the time (2000–2020), and compare with the capacity actually built (Tier C).
-- Audited extraction pipelines (GEM iron and steel tracker, company and project filings).
-- Paired with MSc II (O2.3) on steel in Pillar II. Another metallurgy sector can replace steel if circumstances require. Feeds the mid-term synthesis.
+- **Backward:** apply heuristic marginals to the data available at the time (2000–2020), and compare with the capacity actually built (Tier C). Audited extraction pipelines (GEM iron and steel tracker, company and project filings).
+- **Forward:** extend the reconstructed market into a stock-driven dynamic MFA under two or three SSPs (ODYM or flodym), building on the group's SSP-consistent aluminium model. Perturbing it shows when scrap is constrained, and therefore when extra demand falls on primary routes. This gives the regime for φ(t) on physical grounds; price responses (ν) are not captured and are stated as a limit.
+- Steel first, aluminium as the explicit fallback. Paired with MSc II (O2.3, metallurgy class) in Pillar II. Feeds the mid-term synthesis.
 
 The calendar for both pillars is in [integration_across_pillars.md](integration_across_pillars.md).
 
@@ -148,7 +151,7 @@ AI does not replace the economics. It makes it affordable to test our shortcuts 
 - [ ] **Hindcasting for Tier C:** a historical period and sector where heuristic marginals can be checked against capacity actually built (steel 2000–2020 is a candidate).
 - [ ] **MESSAGEix-Materials:** whether it runs from public data. Ask the IIASA contacts.
 - [ ] **HQP:** allocation settled (6 funded by Discovery, see calendar). Update the training-plan sentence from "two-thirds PhD" to about half PhD and half MSc.
-- [ ] **Objective structure (next step):** core representation O1.1 tested under three kinds of reference (O1.2–O1.4); decide whether geographic disaggregation is its own sub-objective or part of O1.1.
+- [ ] **HQP training:** new courses at Polytechnique Montréal on industrial ecology modelling, including dynamic MFA (to discuss for the training plan).
 
 REMIND and IMAGE input data are not public, so these models are used through their outputs only (Tier B) unless a collaboration is set up.
 
