@@ -35,4 +35,5 @@ Six HQP funded by Discovery across both pillars: 3 PhD (4 years) and 3 MSc (2 ye
 
 **Implications for Pillar II (to reflect in its note):** the database diagnostic is folded into year 1 of the O2.1 PhD (no separate MSc); the plasma case in O2.3 has no Discovery HQP, so O2.3 rests on the ongoing plastics PhD plus PLASMA results.
 
+Live, editable version of this program-level note (integration and HQP calendar): https://claude.ai/code/artifact/22a7c81d-d17c-433d-8024-cb9f2214fe0f
 Pillar I working conclusions: https://claude.ai/code/artifact/4a3464f2-0fbc-43bc-b1c5-80246e4254fd
