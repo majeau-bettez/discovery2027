@@ -62,8 +62,8 @@ Each sector is handled at the most structural tier its models allow. Mirroring P
 | Sector | Main tier | Models we can perturb | Reference scenarios | Data on market state and pipelines | Hard part | Link to Pillar II |
 | --- | --- | --- | --- | --- | --- | --- |
 | Energy | A | EnergyScope Québec (dynamic and snapshot, peak hours; heavy-industry heat via the CANMET project); GCAM; PyPSA; MESSAGEix-GLOBIOM public baseline (optional) | NGFS, AR6, SSP database; Canada Energy Regulator; Hydro-Québec supply plans | Global Energy Monitor power tracker; EIA-860; NREL Cambium long-run marginal rates | Load profile and peak; binding caps | Process operation changes load profiles; heavy-industry heat |
-| Nitrogen fertilizer and agriculture | A–B | GCAM land module; MAgPIE | SSP land-use outputs; OECD-FAO Agricultural Outlook; AgMIP | FAOSTAT incl. trade matrix; BACI; 2.-0 LCA iLUC model; ammonia plant data (source to identify) | Split between intensification, land expansion and reduced consumption; supply response of ammonia | Plasma fertilization vs. Haber-Bosch (O2.3) |
-| Metals, steel first | B–C | MESSAGEix-Materials (whether it runs on public data is unverified) | IEA Critical Minerals Outlook; stock-flow models (ODYM) | USGS; GEM iron and steel tracker; NI 43-101 reports (SEDAR+); NRCan Major Projects Inventory | Constrained supply: scrap, by-products, overcapacity | Metallurgy class resolved by vintage (O2.4); ArcelorMittal |
+| Nitrogen fertilizer and agriculture | A–B | GCAM land module; MAgPIE | SSP land-use outputs; OECD-FAO Agricultural Outlook; AgMIP | FAOSTAT incl. trade matrix; BACI; 2.-0 LCA iLUC model; ammonia plant data (source to identify) | Split between intensification, land expansion and reduced consumption; supply response of ammonia | Plasma fertilization vs. Haber-Bosch (O2.2, years 4–5) |
+| Metals, steel first | B–C | MESSAGEix-Materials (whether it runs on public data is unverified) | IEA Critical Minerals Outlook; stock-flow models (ODYM) | USGS; GEM iron and steel tracker; NI 43-101 reports (SEDAR+); NRCan Major Projects Inventory | Constrained supply: scrap, by-products, overcapacity | Metallurgy class resolved by vintage (O2.3); ArcelorMittal |
 
 The nitrogen market bridges the energy and agriculture rows. Haber-Bosch ammonia depends on natural gas or electrolytic hydrogen, and plasma fixation on electricity, so its marginal response couples both systems.
 
@@ -79,9 +79,9 @@ Shared LCA plumbing: IAMC nomenclature and pyam, premise, ecoinvent, Brightway. 
 
 ## Convergence with Pillar II
 
-- **Vintage.** The capacity response share φ(t) and the market regime decide which vintage responds. Idle capacity is often old; new capacity is close to best available technology. Pillar II's classes resolved by vintage (O2.4) make this distinction real in the inventory.
+- **Vintage.** The capacity response share φ(t) and the market regime decide which vintage responds. Idle capacity is often old; new capacity is close to best available technology. Pillar II's classes resolved by vintage (O2.3) make this distinction real in the inventory.
 - **Geographic clones.** Pillar II's diagnostic quantifies where candidate suppliers map to the same proxy, that is, where identifying the marginal supplier changes nothing.
-- **Joint hypothesis.** Uncertainty about the deployed foreground configuration exceeds uncertainty about the background marginal supplier. It is tested by variance decomposition (O2.3 with Pillar I).
+- **Joint hypothesis.** Uncertainty about the deployed foreground configuration exceeds uncertainty about the background marginal supplier. It is tested by variance decomposition on the nitrogen case (O2.2 anticipatory phase with O1.2, both in years 4–5).
 - **Operation changes are also market perturbations.** A change in how a process runs (Pillar II) can change its load profile or coproduct output, and Pillar I translates that into market consequences.
 - **Shared cases.** Plasma fertilization vs. Haber-Bosch (nitrogen market, building on the PLASMA project, which runs until 2027); heavy industry and heat in EnergyScope Québec (CANMET); steel (ArcelorMittal).
 - **Shared evaluation logic.** Both pillars test a core representation against different kinds of reference, with the same success criteria on two fronts.
@@ -112,7 +112,7 @@ Six HQP are funded by Discovery across both pillars: 3 PhD (4 years each) and 3 
 
 - Apply heuristic marginals to the data available at the time (2000–2020), and compare with the capacity actually built (Tier C).
 - Audited extraction pipelines (GEM iron and steel tracker, company and project filings).
-- Paired with the O2.4 MSc on steel in Pillar II. Another metallurgy sector can replace steel if circumstances require. Feeds the mid-term synthesis.
+- Paired with the O2.3 MSc on steel in Pillar II. Another metallurgy sector can replace steel if circumstances require. Feeds the mid-term synthesis.
 
 The calendar for both pillars is in [integration_across_pillars.md](integration_across_pillars.md).
 
