@@ -88,3 +88,14 @@ The 2026 text spent ~2.3 pages on context and impact and ~1.7 on methods. Target
 - Training plan: per-HQP blocks follow directly from the objective table (O-code, skills, co-supervision, first deliverable); update "two-thirds PhD" to half/half.
 - Relationship to other support: CFI v0 framing (pillar 2 note), Consortium as partner-dependent.
 - Battle plan: Tasks 1–3 framing is superseded by the pillars; B1–B5 are largely covered by the pillar notes, B6 (D1–D2) and B7 (W7) are not.
+
+## 9. First full draft (2026-10-19): status and open points
+
+`2027/proposal.tex` now holds a complete first draft: 5 pages body (about 2 lines spare) + 2 pages of references (40 entries; `references.bib` regenerated with cited entries only). Sections: 1 Context and gap; 2 Goal, RQs, approach (+ Figure 1, the program map rendered from `figures/program_map/Main.dc.html` into `figures/program_map.pdf`, title and "means" row cropped); 3 Shared protocol; 4 Pillar I; 5 Pillar II; 6 Integration, timeline (HQP table), risks; 7 Infrastructure, partners, EDI, significance. "Recent progress" is distributed into the pillars rather than a separate section.
+
+Open points for review:
+- **Figure legibility.** At 0.86 text width the canvas text prints at about 5 pt. A print version of the canvas (fewer words, larger type, wider than tall) is needed; it would also free space.
+- **Load on MSc I (O1.3).** Hindcast plus forward dynamic MFA in two years is heavy for an MSc; a reviewer may flag it. Option: forward part limited to perturbing an existing SSP-consistent MFA.
+- **Citations** (deferred by decision): EnergyScope Québec has no own reference yet (Limpens + mescal used); mescal and Provost-Savard entries carry stale status; Azapagic 1999 stands in for recent LCA-integrated process optimization (Guillén-Gosálbez); Vandepaer 2019 and Douglas 1985 were added by hand and need checking against Zotero.
+- **Partners paragraph** names ArcelorMittal, Hydro-Québec, MEIE; CanmetENERGY appears only as the linked PhD on industrial energy use. Check the exact CanmetENERGY lab name.
+- **Title** for the portal: working title in a comment at the top of `proposal.tex`.
