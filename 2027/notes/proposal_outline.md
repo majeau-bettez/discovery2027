@@ -99,3 +99,23 @@ Open points for review:
 - **Citations** (deferred by decision): EnergyScope Québec has no own reference yet (Limpens + mescal used); mescal and Provost-Savard entries carry stale status; Azapagic 1999 stands in for recent LCA-integrated process optimization (Guillén-Gosálbez); Vandepaer 2019 and Douglas 1985 were added by hand and need checking against Zotero.
 - **Partners paragraph** names ArcelorMittal, Hydro-Québec, MEIE; CanmetENERGY appears only as the linked PhD on industrial energy use. Check the exact CanmetENERGY lab name.
 - **Title** for the portal: working title in a comment at the top of `proposal.tex`.
+
+## 10. Second pass (2026-10-19)
+
+Criteria set by Guillaume: (1) the underlying challenge, not its most common incarnation; (2) no catchphrases, no overpromising; (3) kill darlings; (4) feasibility shown by a plan, not by internal variables.
+
+What changed:
+- **Gap 2 reframed** around the representation challenge: model once what variants of a technology share (efficiency, reuse) while capturing the consequences of their differences (context, vintage, operation, feedstock, maturity). Databases = breadth without specificity; parametrized/engineering models = specificity without breadth. Pillar II concept, O2.1 ("where to draw the line between what is shared and what varies") and RQ-II follow it. "Fixed recipes" dropped (parametrization exists).
+- **Gap 1 reframed**: a market's response depends on its state, on the size and timing of the change and, for electricity, on when demand occurs; trend rules are the common incarnation. Prior art credited: long-run marginal emission factors from capacity-expansion models (Hawkes 2014; Gagnon & Cole 2022), Mathiesen 2009. Novelty now stated as: systematic error measurement of LCA's rules, beyond electricity, connected to databases.
+- **Removed catchphrases / unsupported claims**: "perturbation of models" as slogan; "evaluation, not validation" (validity now answered directly); "fixed recipes"; "calendar-driven growth"; "communities are an output of our models"; "error bounds" per market; "model package is the source"; "uncertainties seldom quantified" (not what Bamber shows); "prospective databases have so far been attributional" → "mostly". Plasma fixation is an alternative to *fertilizers from* Haber-Bosch ammonia, not to ammonia.
+- **Darlings cut**: Greek-letter decomposition (now three plain questions); Tiers A/B/C (replaced by the figure's rows); demand- vs calendar-driven decomposition of IAM growth; post-perturbation effects; within-model regional contrasts; Calcul Québec line; long list of interface questions (four kept).
+- **Plan made explicit**: "Recent progress" restored (first point in NSERC's proposal instructions); "Short-term objectives and approach" with the known → unknown sequence; objectives table with HQP, years and key milestone; one fallback per dependency.
+- **Renumbering (to confirm):** O1.2 and O1.3 swapped so that numbering follows the figure's rows and the calendar: **O1.2 = metallurgy hindcast and trajectories (MSc I, years 2–3); O1.3 = regional scenarios to local markets, nitrogen (MSc III, years 4–5).** Pillar and integration notes still use the old codes.
+
+Verified during this pass: NSERC proposal points (recent progress; short- and long-term objectives; literature; methodology with EDI; impact) and the rule that figure/table text is exempt from 12 pt but must be "clearly legible"; Vandepaer 2019 (growth-proportional shares 2015–2030; energy-model approach judged impractical across all markets); Hawkes 2014 and Gagnon & Cole 2022 bibliographic details; Pellan 2026 (factor 13 across sites, factor 6 vs proxies); De Wachter 2026 (37% mass imbalance in ecoinvent 3.10); Maes 2023.
+
+Open points:
+- **Figure legibility (highest risk).** Canvas text prints at about 4–5 pt; NSERC requires figure text to be clearly legible. Needs a print version of the canvas (fewer words, larger type).
+- **Page 5 is full.** Any addition needs an equivalent cut.
+- **Recent progress:** NSERC asks renewal applicants to describe progress attributable to the previous Discovery Grant; add which outputs it supported.
+- To check: HTC work as a "reference model" for O2.2; CanmetENERGY lab name; EnergyScope Québec reference; MSc I load (hindcast + forward MFA).
