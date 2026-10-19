@@ -1,6 +1,6 @@
 # EDI in the research content: literature scan for the 2027 resubmission
 
-Companion file: `edi_literature.bib` (58 entries not already in the Zotero export, tagged `EDI_A1`…`EDI_A5` by angle, plus `discovery2027`). Bracketed keys below are keys in that file; keys marked *(lib)* are already in your library and were deliberately left out of the .bib. Search done 18 Oct 2026.
+Companion file: `edi_literature.bib` (56 entries not already in the Zotero export, tagged `EDI_A1`…`EDI_A5` by angle, plus `discovery2027`). Bracketed keys below are keys in that file; keys marked *(lib)* are already in your library and were deliberately left out of the .bib. Search done 18 Oct 2026.
 
 ## Why this matters for the resubmission
 
@@ -23,8 +23,6 @@ That reviewer gave you a free pass this time; the next one may not. More usefull
 
 **LCA is normative by construction.** Ekvall et al. 2005 (Ekvall2005JCPnormative *(lib)*) and Schaubroeck 2022 *(lib)* map attributional LCA to rule-based ethics and consequential LCA to consequentialism. Freidberg 2018 [freidberg2018values] and Nathan & Coles 2020 [nathan2020judgement] argue practitioners hide value judgements that should be stated. Jegen 2024 (jegenLifeCycleAssessment2024 *(lib)*) covers the politics of LCA in policy. Implication: choosing CLCA is itself an ethical stance; saying so costs nothing and reads as reflexive.
 
-**Sharing principles.** Hjalsted et al. 2021 [hjalsted2021sharing] show absolute-sustainability verdicts change with the allocation principle; Heide & Gjerris 2024 [heide2024embedded] argue grandfathering and expenditure-based sharing (used by SBTi) fail to guarantee basic needs. CIRAIG's own scientific programme already commits to evaluating these downscaling choices, so you can cite alignment.
-
 **Distribution inside consequential boundaries.** Almeida, Weidema & Godin 2022 [almeida2022redistribution] add re-spending of income by three household income groups to a consequential model and find persistent environmental and social effects. Weidema 2009 [weidema2009budget] monetizes LCIA endpoints with an explicit equity weighting. These are the closest existing bridges between CLCA and distribution.
 
 **Gender.** Thin. Carlsson Kanyama et al. 2021 [carlssonkanyama2021gender] compare Swedish single men's and women's consumption footprints (men higher at similar spending; verify the exact figure before quoting). Berland & Leroutier 2025 [berland2025gendergap] (working paper, not peer reviewed) find women's food and transport footprints about 26% lower in France. Arvidsson 2020 [arvidsson2020timebased] proposes labour-hour S-LCA indicators split by sex. I would not build an objective on gender; at most, mention that process models carrying labour-hour flows make sex-disaggregated labour indicators possible.
@@ -33,14 +31,13 @@ Peripheral: Clark & Miles 2021 [clark2021ejsustainability] (EJ and sustainabilit
 
 ## 2. Cultural subjectivity in impact metrics: the choices you will have to make
 
-The program will have to make, or inherit, at least five value choices. For each, the literature gives a reason to report sensitivity rather than pick silently.
+The program will have to make, or inherit, at least four value choices. For each, the literature gives a reason to report sensitivity rather than pick silently.
 
 | Choice | What the literature shows | Suggested stance |
 |---|---|---|
 | Time horizon and discounting | Horizon and inclusion of uncertain effects can change product rankings [deschryver2013valuechoices]; discounting is an intergenerational-equity choice [hellweg2003discounting]; GWP100 hides a near- vs long-term trade-off [ocko2017tradeoffs]; dynamic LCA (Levasseur2010a *(lib)*) | Report GWP20 and GWP100 or dynamic results; test ranking stability |
 | Weighting | EU Environmental Footprint weights rest on a public survey of 2,400 respondents in six EU countries plus expert panels [sala2018efweighting]; a global survey finds weights split by income group, high-income respondents prioritizing ecosystem quality, lower-income respondents human health [bayazitsubasi2024weighting] | If any single score is used, run it under both weight sets |
 | Equity weighting in monetization | Whose income is the reference changes damage costs substantially [anthoff2009equityweighting]; [weidema2009budget] | Avoid monetized single scores, or make the equity weight explicit |
-| Sharing principle (absolute sustainability) | See §1 [hjalsted2021sharing, heide2024embedded] | State the principle and show at least one alternative |
 | What counts as damage to nature | Plural (instrumental, intrinsic, relational) values of nature; standard metrics capture a narrow slice [pascual2023diversevalues] | Acknowledge the limits of PDF-based endpoints; don't over-reach |
 
 **Counterpoint, for calibration.** Not every metric is culturally contingent: the disability weights behind DALYs were broadly consistent across the countries surveyed for GBD 2010 [salomon2012disability]. The subjectivity in human-health endpoints sits more in time horizon, discounting and model inclusion than in severity valuation. Huijbregts 2013 *(lib)* critiques consensus-building in LCIA, which is the right reference for "whose consensus".
@@ -93,7 +90,7 @@ The program will have to make, or inherit, at least five value choices. For each
 
 ## Suggested text for the proposal (≈120 words, to adapt)
 
-> *EDI in the research content.* Consequential LCA identifies which suppliers, and therefore which places, respond to a decision. The communities hosting marginal mines, smelters or power plants are thus an output of our models, not an afterthought. Because the geographic disaggregation of Pillar 1 resolves where consequences occur, we will report results disaggregated by region and, where public spatial data allow, overlaid with exposed-population characteristics (income, Indigenous lands, remote regions), following NSERC's guidance on disaggregated analysis. We will also make value choices explicit (time horizon, weighting set, sharing principle), test whether rankings survive alternative value sets, including weights elicited from lower-income populations, and flag region-specific data quality so that recontextualized datasets are not mistaken for local data.
+> *EDI in the research content.* Consequential LCA identifies which suppliers, and therefore which places, respond to a decision. The communities hosting marginal mines, smelters or power plants are thus an output of our models, not an afterthought. Because the geographic disaggregation of Pillar 1 resolves where consequences occur, we will report results disaggregated by region and, where public spatial data allow, overlaid with exposed-population characteristics (income, Indigenous lands, remote regions), following NSERC's guidance on disaggregated analysis. We will also make value choices explicit (time horizon, weighting set), test whether rankings survive alternative value sets, including weights elicited from lower-income populations, and flag region-specific data quality so that recontextualized datasets are not mistaken for local data.
 
 ## Where I would push back
 
