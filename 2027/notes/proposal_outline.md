@@ -119,3 +119,28 @@ Open points:
 - **Page 5 is full.** Any addition needs an equivalent cut.
 - **Recent progress:** NSERC asks renewal applicants to describe progress attributable to the previous Discovery Grant; add which outputs it supported.
 - To check: HTC work as a "reference model" for O2.2; CanmetENERGY lab name; EnergyScope Québec reference; MSc I load (hindcast + forward MFA).
+
+## 11. Pillars rebuilt as tasks under the new introduction (2026-10-23)
+
+Guillaume rewrote Sections 1–2 (context, gap, opportunity; core challenges, SO-1 to SO-3, common strategy, recent progress). Pillar I and II were rebuilt to fit it; intro, Sections 3, 6 and 7 untouched.
+
+Structure: each pillar opens with an **Approach** paragraph (how the SO is pursued, in the terms of the common strategy), then tasks. Each task states a decidable question (informative either way), the method and assets that make it feasible, and an **Outcome**.
+
+| Task | SO | HQP, years | Question | Old code |
+|---|---|---|---|---|
+| 1.1 Marginal suppliers tested against structural energy models | SO-1 | PhD I, 1–4 | How large are heuristic errors vs a structural model's response, and on what do they depend? (anticipation, load profile = intro efficiency example; global model in years 3–4) | O1.1 |
+| 1.2 Material markets: hindcast and constrained secondary supply | SO-1 | MSc I, 2–3 | Would heuristics have identified the capacity actually built? When does recycled-content demand fall on primary production? (= intro recycling example) | O1.2 |
+| 1.3 From regional scenarios to local markets | SO-1 | MSc III, 4–5 | Does representing local markets as instances of regional scenario markets change marginal suppliers enough to change decisions? | O1.3 |
+| 2.1 Interoperability framework for process models | SO-2 | PhD II, 1–4 | What must an interface expose for models of any sophistication to be exchanged without loss of consistency, and where does it matter? (diagnostic + GSA; test suite; co-products under changing operation) | O2.1 |
+| 3.1 Reduced models of established, data-rich processes: metallurgy | SO-3 | MSc II, 2–3 | How far do engineering models deviate from plant data (calibration step of the workflow), and does a calibrated vintage-resolved class change results? | O2.3 |
+| 3.2 Efficient workflow, from documented to emerging processes | SO-3 | PhD III, 2–5 | Can a human-in-the-loop (AI-assisted) workflow build functional reduced models with much less effort, and with what errors? Then flowsheet alternatives; plasma N fixation | O2.2 |
+
+The Pillar I Approach now carries the base-scenario set and the two evaluation criteria (formerly Section 3); Pillar II refers to the same criteria. Prior art credited in Task 1.1 (long-run marginal emission factors: Hawkes 2014; Gagnon & Cole 2022).
+
+Length: pillar text ≈ 11.4k characters vs 6.6k before (+≈45 lines), the cost of explicit questions, approaches and outcomes. Body ≈ 5.65 pages. For the later cuts: intro (Sections 1–2) ≈ 2 pages is the main reserve; Sections 6–7 ≈ 0.9 page can shrink; avoid taking the pillars below ≈ 1.8 pages (methods were the 2026 weakness).
+
+To fix later (outside the pillar sections, left untouched on purpose):
+- Section 3 is now an empty heading (its content is commented out; scenarios and criteria moved into the pillars) — delete or rebuild.
+- Section 6 still uses the old codes O1.1–O2.3 (mapping in the table above); the risks paragraph too.
+- Stray "a" before `\section{Open infrastructure...}`.
+- Intro typos noticed: double period after the premise citation; "identifcation"; "limitted", "limitting"; "to a fit differing levels"; "(\textbf{Pillar I)}" bracket; "Its results rest" (CLCAs plural); "over the duration the decision" (missing "of"); missing period after the citation of process models in Recent progress.
