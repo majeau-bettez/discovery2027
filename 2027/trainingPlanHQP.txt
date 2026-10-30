@@ -1,152 +1,31 @@
-## expected HQP group:
+TRAINING PHILOSOPHY
 
-- Plan on maitaining the size of my research group in a steady state around 8-10 HQPs as principle supervisor at any given time
+I aim to train researchers who build models others can trust: rigorous, open about their assumptions, and tied to the decisions they inform. Trainees move from guided work to autonomy, with autonomy matched by growing accountability for their results and code. I maintain a group of 6–9 HQP under my principal supervision.
 
-- With students completing their PhDs, this will involve recruiting 6-7 new HQPs over the course of the discovery grant
+Mentoring. Each HQP has a weekly one-on-one meeting on science, progress and career, which starts with how they are doing. I lead two discussion groups: Midi-outils, on scientific software practice (version control, testing, code review, documentation), and a monthly circular-economy seminar open to other disciplines. HQP write through shared drafts and writing workshops, rehearse talks before conferences, and contribute to proposals, peer reviews and teaching material. Twice a year they present at CIRAIG's internal symposia and to its industrial partners, learning to speak to the people who will use their results. I am open about research life (funding, workload, setbacks) so that its constraints can be discussed rather than endured. Each HQP sets a yearly development plan with me (skills, publications, career goals) and is supported in scholarship applications, teaching assistantships and the co-supervision of undergraduate projects.
 
-- probably 2/3 PhD, 1/3 MSc, with one or two BSc thrown in there
+Barriers. Women made up 27% of Canadian undergraduate engineering enrolment in 2024, and Indigenous students 0.7%; LCA knowledge, its databases and its methods are produced mainly in Europe and North America. A 2024 consultation of CIRAIG members by Polytechnique's EDI office (Labos inclusifs) documented local barriers: language for students who speak neither French nor English as a first language, in a francophone institution with no French courses and 46% international graduate students; isolation in hybrid work; unequal access to paid opportunities; financial precarity of international students with limited scholarship eligibility; and a team mostly of engineers trained in Europe or North America.
 
-## Training activities:
+Self-reflection. The consultation showed me that informal habits I thought harmless, such as offering paid opportunities directly to some students, felt inequitable to others, and that my European-trained engineering perspective shapes whom I recruit and which questions I see. I now treat these as practices to correct, not intentions to defend.
 
-- Weekly individual meetings
-- Thematic discussion groups (Midi-dev for scientific software development, Circular Economy Scientific Monthly group discussion0
+Practices. (i) Recruitment: open postings shared beyond my networks, anonymized CVs at first screening, a committee including a colleague of another gender, and openness to non-engineering and non-linear backgrounds. (ii) Inclusive culture: all opportunities (paid work, conferences, teaching) posted to the whole group; peer pairing for newcomers; meetings where either language is welcome; CIRAIG's new permanent EDI committee, which provides external EDI training and a person-protection protocol with visible resources. (iii) Equity of means: all HQP receive equal funding above Polytechnique's recommended level, regardless of scholarship eligibility; flexible schedules, a shared in-person day against isolation, and at least four weeks of vacation. (iv) Accountability: each year, an analyst with no authority over trainees holds confidential interviews; findings are discussed with the group. (v) Social context: each case keeps an assumptions register (whose scenarios, data and values the models carry), reviewed with trainees, which links their training to the EDI considerations of the research itself.
 
-- Collaborative code and data reviews (that definitely is the plan)
+RESEARCH TRAINING PLAN
 
-- 1 yearly team-building activity at my farm, or camping in nature
+The program trains three PhD and three MSc students, plus one or two undergraduates, each owning one task. Co-supervisors bring the expertise each task needs. All HQP take my new graduate course, Industrial Ecology Modelling (MFA, consequential LCA, input-output and macro-models), designed for this skill set.
 
-- 2 yearly internal ShareCIRAIG internal conferences, for common reflection on a scientific frontier and each student getting to present their project to the wider group
+PhD I (Task 1.1, years 1–4; co-supervised by Edgar Hertwich, IIASA). Energy or industrial engineering profile. Learns to perturb IAMs (MESSAGE-GLOBIOM) and ESMs (EnergyScope-Quebec), to run them on Calcul Québec, and to model market responses for CLCA; graduate courses in operations research and optimization; a summer at IIASA (Young Scientists Summer Program). Hertwich brings IAM and industrial ecology expertise and access to IIASA's modelling teams. First deliverable (year 2): the perturbation protocol and first EnergyScope-Quebec responses. Builds the framework used by MSc I and MSc III.
 
--2 yearly meetings with industrial partners of CIRAIG
+PhD II (Task 2.1, years 1–4). Software-oriented engineering or computer science profile. Learns software architecture, data models and ontologies, testing and continuous integration, and consequential co-product modelling; graduate course on [ontologies/knowledge representation]; intensive Brightway doctoral training; works with the CFI 2PURES developers and the Brightway and Premise communities. First deliverable (year 2): the diagnostic of process parametrization in consequential ecoinvent. Defines the interface that PhD III and MSc II populate, and so learns to design for other users.
 
-- A training ecosystem for learning
-	- scientific writing (with ateliers, feedback, shared drafts)
-	- scientific software development and programming best practices
-	- reproducible, transparent, agile, code-based research
-	- oral scientific presentation boot camps
-	- contributions to grant application, peer-review
-	- contribution to developing teaching material
+PhD III (Task 2.2, years 2–5; co-supervised by Jason Tavares, chemical engineering). Process engineering profile. Adds Bayesian statistics and machine learning (graduate courses), LLM-agent workflows under human review, flowsheet synthesis, and plasma processes within the PLANET project. Tavares brings process design and plasma expertise. The task requires judging when an automatically drafted model is physically sound, so engineering judgement remains the core skill; AI is a means, used with traceable sources. Drafts the steel class for MSc II.
 
-## Skill development
-	- scientific and technical skills: sustainability modelling, data integration, scenario analysis, uncertainty assessment.
-	- Professional skills: teamwork, communication (esp. with non-scientist parners), project management, scientific writing.
-- Open-science and reproducibility: version control, documentation, transparent workflows. (definitely! super important!)
+MSc I (Task 1.2, years 2–3; co-supervised by Manuele Margni, HES-SO and CIRAIG). Learns dynamic MFA, plant and company data, and retrospective testing of CLCA methods, with ArcelorMittal. Margni brings consequential LCA methodology, so that data work stays tied to method questions.
 
+MSc II (Task 2.3, years 2–3; co-supervised by Jean-Philippe Harvey, chemical engineering). Learns metallurgical thermodynamics, calibration on plant data and vintage-resolved models; Mitacs internship at ArcelorMittal. Harvey brings thermodynamics and metallurgy, needed to check the efficiency gains that scenarios assume against physical limits.
 
-## Career preparation and mentorship
+MSc III (Task 1.3, years 4–5). Learns spatial disaggregation, fertilizer markets and distributional reporting, with OCP and the GLOBIOM team; geography or data science profile, which widens the group's disciplines.
 
-- scientific career trajectory (first authorship, presentations in scientific conferences, their own scholarship and grant applications)
-- teaching exposure and pedagogic
-- industry and sustainability analyst exposure
-- more generally, I am being very transparent with students as to the ups and downs of the life of a researcher. They know when I'm overwhelmed. They know what grant pays for for scholarship. They get to peek behind the curtain.
+Undergraduates (USRA). Compile plant capacities (Task 1.2) and published process models (Task 2.1), with a first exposure to reproducible code.
 
-
-# EDI:
-
-- Foster a culture of openness, where I am open about my ups and downs and what drives me, so they can also. Right now, I have two students that struggle with mental health issues and they are very open with me about it, with one of them definitely better now.
-
-- Yes: recruiting through open postings
-
-- have anonymized CVs prior to first round of selection, to guard against unacknowledged biases, and include at least one other professor (of a different gender than me) on the selection committee.
-
-- yes: dialogue about worklife balance
-
-- yes flexible schedules, possibility to work from home at their own pace: trust them to manage their schedule
-
-- dialogue on taking _minimum_ 4-6 weeks of holiday to recover
-
-- "Highlighting female, francophone, or international role models in sustainability." --> yes, close collaboration within CIRAIG with world-class female scientists
-
-
-- All students are financially supported, slightly above the recommended scholarship level of Polytechnique
-
-- Ensure that once a year people not in a position of authority relative to the students (typically an analyst) runs a series of private interviews to get an unfiltered feedback on any issues within the research group, including the perceived level of inclusivity and equity.
-
-## Training environment and culture
-
-I hope to foster an environment with a sense of excitement at the adventure of research, balanced by a sense of responsibility to produce useful research that directly supports informed decision making toward sustainable decisions. A culture of open collaboration within the group but also with the broader community. A spirit of indepedent, critical and creative thinking that is solution oriented. And open to interdisciplinary innovation.
-
-
-
-=====================
-Over the next five years, I will maintain and further strengthen a research group of 7–10 HQP under my direct supervision, complemented by several co-supervised students. As current PhD students complete their work, this will involve recruiting about six to seven new HQP during the funding period—approximately two-thirds PhD and one-third MSc, with one or two undergraduate trainees. This size allows for individualized mentorship while sustaining an intellectually vibrant team. PhD students will focus on developing transformational methodological innovations at the frontier of industrial ecology modelling, while MSc students will contribute to innovative implementation and validation within applied case studies.
-
-
-
-TRAINING STRUCTURE AND ACTIVITIES.
-This plan builds directly on mentoring practices that have proven successful in my group. Each HQP benefits from weekly individual meetings devoted to scientific progress, problem-solving, and career development. I also lead two thematic discussion groups (one on scientific software development and another monthly seminar on circular-economy research) where students present methods and results to peers. Collaborative code and data reviews, already being adopted, will continue to expand to reinforce open-science practices. Twice yearly, students present their work at ShareCIRAIG internal symposia and meet the industrial partners of CIRAIG, connecting academic research to real-world sustainability questions. With my team, we've already discussed adding a yearly team-building retreat in nature to help reinforce group cohesion and well-being.
-These structured interactions ensure that HQP develop not only technical expertise but also the confidence to communicate and collaborate across disciplines and sectors.
-
-Beyond project work, students are supported through a comprehensive training ecosystem covering:
-
-- scientific writing through workshops, shared draft reviews, and iterative feedback;
-
-- software development and programming best practices;
-
-- reproducible and transparent, code-based research workflows;
-
-- oral-presentation boot camps;
-
-- participation in proposal preparation, peer review, and the development of teaching material.
-
-These initiatives will continue to evolve as the team grows, ensuring a consistent yet adaptive framework for skill development.
-
-SKILL DEVELOPMENT.
-HQP will acquire advanced technical expertise in sustainability modelling, data integration, scenario analysis, and uncertainty assessment, along with professional skills in teamwork, communication (especially with non-scientific partners), project management, and writing. Training in open-science methods (version control, documentation, reproducibility) remains a cornerstone of my group’s identity. Together, these skills equip students to contribute to both scientific innovation and evidence-based decision-making in sustainability transitions.
-
-CAREER PREPARATION AND MENTORSHIP.
-Each HQP is guided to define a personal research trajectory and professional path. Students are encouraged to publish as first authors, present at international conferences, and apply for scholarships and travel grants. They gain teaching and supervisory experience through undergraduate projects and frequent interaction with industry analysts and sustainability practitioners. I maintain a transparent dialogue about the realities of research life—funding, workload, and well-being—so that trainees understand both the opportunities and the challenges of research careers. The objective is to prepare HQP for diverse roles in academia, government, and industry, supported by a deep understanding of the scientific and social dimensions of sustainability research.
-
-EQUITY, DIVERSITY, AND INCLUSION.
-I will sustain and strengthen EDI practices that are already established in my group. Recruitment is conducted through open calls with anonymized CVs during the first screening round and at least one gender-diverse committee member. I foster a culture of openness where students can discuss personal or mental-health challenges without stigma. Flexible schedules and remote work are standard, and all HQP are encouraged to take a minimum of four to six weeks of vacation each year to maintain balance. Collaboration with leading female, francophone, and international scientists within CIRAIG provides visible role models. To ensure accountability, an independent analyst conducts annual confidential interviews with trainees to gather feedback on inclusivity and team dynamics. These measures have already proven effective in fostering openness and will be maintained and periodically reviewed to ensure continuous improvement. All students receive financial support above institutional minimums.
-
-TRAINING ENVIRONMENT AND CULTURE.
-My long-term vision is to foster an environment combining the excitement of scientific discovery with the responsibility of producing knowledge that supports sustainable decisions. The lab culture values curiosity, collaboration, and openness—within the group and across the broader community. Students are encouraged to think critically, work transparently, and approach problems creatively. Building on a strong mentoring foundation, this program will continue to produce HQP who are not only technically proficient but also independent thinkers and responsible innovators, ready to lead Canada’s sustainability transition.
-
-
-
-===============================
-HQP TRAINING PLAN
-
-Over the next five years, I will maintain and further strengthen a research group of 7–10 HQP under my direct supervision, complemented by several co-supervised students. As current PhD students complete their work, this will involve recruiting about six to seven new HQP during the funding period, approximately two-thirds PhD and one-third MSc, with one or two undergraduate trainees. This size allows for individualized mentorship while sustaining an intellectually vibrant team. PhD students will focus on developing transformational methodological innovations at the frontier of industrial ecology and sustainability modelling, while MSc students will contribute to innovative implementation and validation within applied case studies. Undergraduate trainees will receive a first exposure to research, data processing, and reproducible coding practices, often as contributors to shared group tools.
-
-This steady-state structure ensures continuity between research projects and students’ development, allowing incoming HQP to benefit from the expertise, tools, and mentoring culture already in place. The approach builds directly on the methods that have proven most effective in my past supervision and that have yielded strong HQP outcomes.
-
-TRAINING STRUCTURE AND ACTIVITIES
-
-Each HQP benefits from weekly one-on-one meetings devoted to scientific progress, problem solving, and career development. These sessions are the cornerstone of my supervision, offering space for candid reflection, technical feedback, and forward planning. I also lead two thematic discussion groups, one focused on scientific software development and another monthly seminar on circular-economy research, where students present methods, exchange challenges, and propose solutions to one another’s problems. These recurring dialogues have become a key part of our lab culture, fostering intellectual curiosity, collective problem solving, and the ability to articulate and defend research ideas among peers.
-
-Collaborative code and data reviews, already implemented for several projects, will be systematically expanded to strengthen open-science practices. Twice yearly, students present their work at ShareCIRAIG internal symposia, where they receive feedback from faculty, researchers, and industrial partners, and participate in CIRAIG partner meetings, where they learn to communicate research results in applied contexts. Building on recent discussions within the group, I plan to add a yearly team-building retreat in nature to reinforce group cohesion, reflection, and well-being.
-
-These structured interactions ensure that HQP develop not only technical expertise but also confidence in communication, teamwork, and interdisciplinary collaboration. They also foster a sense of belonging and shared purpose, key ingredients for long-term student success.
-
-TRAINING ECOSYSTEM
-
-Beyond project-specific supervision, students are supported through a comprehensive and evolving training ecosystem that provides structured learning opportunities in
-- scientific writing through workshops, shared draft reviews, and iterative feedback
-- software development and programming best practices
-- reproducible and transparent, code-based research workflows
-- oral-presentation and communication training, including practice sessions before major conferences
-- active participation in research funding and dissemination, such as contributing to proposals, reviewing abstracts, and developing teaching materials
-
-These initiatives will continue to evolve as the team grows, with new student-led seminars and peer mentoring planned to promote autonomy and leadership. Together, they provide a consistent yet adaptive framework that ensures HQP gain the skills and confidence to operate independently as scientists.
-
-SKILL DEVELOPMENT AND KNOWLEDGE TRANSLATION
-
-Through their work on this program, HQP will gain advanced expertise in sustainability modelling, data integration, scenario analysis, and uncertainty assessment, along with professional skills in teamwork, communication (particularly with non-scientific partners), project management, and scientific writing. Training in open-science methods such as version control, documentation, and reproducibility is a defining feature of my group and will remain at its core. These practices enable HQP to conduct research that is not only rigorous but also transparent, auditable, and reusable, directly contributing to Canada’s leadership in open, data-driven sustainability science. By the end of their program, HQP will be able to translate complex environmental models into actionable insights for policy and industry. This integration of technical mastery with societal relevance is a central goal of the training environment.
-
-CAREER PREPARATION AND MENTORSHIP
-
-Each HQP is guided to define a personal research trajectory and long-term career plan. Students are encouraged to publish as first authors, present at international conferences, and apply for scholarships and travel grants. They gain teaching and supervision experience through undergraduate projects and frequent interaction with industry analysts and sustainability practitioners, helping them connect theoretical research with practical decision-making contexts.
-
-Mentorship also extends beyond the research itself. I maintain a transparent dialogue about the realities of academic and professional life, including funding processes, collaboration dynamics, and workload management, so that trainees understand both the opportunities and the constraints of research careers. These discussions help normalize the challenges of scientific work, reinforcing resilience and confidence. The overall objective is to prepare HQP for diverse and impactful careers in academia, government, and industry, equipped with both technical depth and systemic understanding.
-
-EQUITY, DIVERSITY, AND INCLUSION
-
-I will sustain and strengthen EDI practices already established in my group. Recruitment is conducted through open calls with anonymized CVs in the first screening round and at least one gender-diverse committee member. I foster a culture of openness where students can discuss personal or mental-health challenges without stigma. Flexible schedules and remote work are standard, and all HQP are encouraged to take a minimum of four to six weeks of vacation each year to maintain balance. Collaboration with leading female, francophone, and international scientists within CIRAIG provides visible role models and diverse mentorship perspectives.
-
-To ensure accountability, an independent analyst conducts annual confidential interviews with trainees to gather feedback on inclusivity and team dynamics. These measures have already proven effective in fostering openness and mutual respect, and will be maintained, strengthened, and periodically reviewed to ensure continuous improvement. All students receive financial support above institutional minimums, ensuring equitable access to research opportunities regardless of personal means.
-
-TRAINING ENVIRONMENT AND CULTURE
-
-My long-term vision is to sustain an environment that combines the excitement of discovery with a strong sense of responsibility toward societal impact. The lab culture values curiosity, collaboration, and openness, within the group and across the broader community. Students are encouraged to think critically, work transparently, and approach problems creatively, always mindful of how their work contributes to evidence-based sustainability transitions. Building on a proven mentoring foundation, this program will continue to produce HQP who are technically proficient, reflective, and engaged researchers, capable of bridging scientific excellence with societal needs. By training students in rigorous, open, and inclusive research practices, this Discovery Grant will not only advance knowledge but also build enduring Canadian capacity for evidence-based environmental decision making.
+Across the program. HQP share one codebase with mutual code reviews; MSc students start from the PhDs' tools, and PhDs learn to mentor by supporting them. Two cohorts mix market and process perspectives on common cases: steel (years 2–3) and fertilizers (years 4–5). From year 1, PhD I and II lead the cross-case synthesis, a training in integrating research across disciplines. Each HQP works with an industrial partner (ArcelorMittal, Hydro-Québec, OCP) who helps define the decision options, and learns to turn partner questions into research questions. Each PhD is expected to publish three first-author articles and present at two international conferences, each MSc one article. These profiles, combining macro-scale modelling, process engineering and open software, are sought by research institutes, government modelling units, consulting firms and industrial sustainability teams, as well as academia.
